@@ -1,10 +1,8 @@
 <%# Printing List%>
-<!-- <div html: {text-align: center}> -->
     <h1>Cake: </h1>
 
-    <%  :style => "color: purple;", @list.each_line do |kind_of_cake| %>
+    <%@list.each_line do |kind_of_cake| %>
         <%= @counter %>. <%= kind_of_cake %><br>
         <% @counter += 1 %>
     <% end %>
-<!-- </div>
- -->
+
